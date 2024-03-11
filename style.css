@@ -1,19 +1,21 @@
 body {
     text-align: center;
+    background-color: #F0F4EF;
 }
 
 #enterDetails {
     float: left; 
     width: 50%;  
-    background-color: darkslategray; 
-    color: floralwhite;
+    background-color: #B4CDED; 
+    color: #344966;
 }
 
 #findDetails {
     float: left; 
     width: 50%; 
-    background-color: floralwhite; 
-    color: darkslategray;
+    height: 365px;
+    background-color: #344966; 
+    color: #F0F4EF;
 }
 
 input {

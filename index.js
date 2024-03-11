@@ -6,7 +6,7 @@
 
  // Your web app's Firebase configuration
  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
- const firebaseConfig = {
+ var firebaseConfig = {
    apiKey: "AIzaSyBc1GlHWnX7Dx2EMmn5JMmdZHkFsVpMmP8",
    authDomain: "crud2-1b32c.firebaseapp.com",
    projectId: "crud2-1b32c",
@@ -17,8 +17,8 @@
  };
 
  // Initialize Firebase
- const app = initializeApp(firebaseConfig);
- const analytics = getAnalytics(app);
+ var app = initializeApp(firebaseConfig);
+ var analytics = getAnalytics(app);
 
         import {getDatabase, ref, get, set, child, update, remove}
         from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js'
@@ -54,7 +54,7 @@
         }
 
         function FindData() {
-            const dbref = ref(db);
+            var dbref = ref(db);
 
             get(child(dbref, "People/" + findID.value))
             .then((snapshot)=>{
